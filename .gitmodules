@@ -1,12 +1,12 @@
 [submodule "AccesoADatos"]
 	path = AccesoADatos
-	url = ./AccesoADatos
+	url = git@github.com:kuromiichi/AccesoADatos.git
 [submodule "Android"]
 	path = Android
-	url = ./Android
+	url = git@github.com:kuromiichi/Android.git
 [submodule "dotNet"]
 	path = dotNet
-	url = ./dotNet
+	url = git@github.com:kuromiichi/dotNet.git
 [submodule "PSP"]
 	path = PSP
-	url = ./PSP
+	url = git@github.com:kuromiichi/PSP.git
