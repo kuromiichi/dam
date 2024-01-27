@@ -1,0 +1,12 @@
+[submodule "AccesoADatos"]
+	path = AccesoADatos
+	url = ./AccesoADatos
+[submodule "Android"]
+	path = Android
+	url = ./Android
+[submodule "dotNet"]
+	path = dotNet
+	url = ./dotNet
+[submodule "PSP"]
+	path = PSP
+	url = ./PSP
