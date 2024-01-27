@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Update submodules
         run: |
-          git submodule update --remote
+          git submodule update --remote --recursive
           git add .
           if git diff --cached --exit-code; then
             echo "No changes to commit"
