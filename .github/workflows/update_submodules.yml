@@ -1,0 +1,24 @@
+name: Update Submodules
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v3
+
+      - name: Update submodules
+        run: |
+          git submodule update --remote
+          git add .
+          if git diff --cached --exit-code; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update submodules $(date +%d-%m-%Y)"
+            git push
+          fi
