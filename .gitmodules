@@ -10,3 +10,6 @@
 [submodule "PSP"]
 	path = PSP
 	url = git@github.com:kuromiichi/PSP.git
+[submodule "SGE"]
+	path = SGE
+	url = git@github.com:kuromiichi/SGE.git
